@@ -23,7 +23,6 @@
         android:padding="4dp"
         android:text="Team A"
         android:textColor="#000000"
-
         android:textSize="20dp"
         android:textStyle="bold|italic"/>
 
@@ -64,11 +63,14 @@
        android:onClick="undoa"
        android:layout_marginLeft="40dp"/>
 </LinearLayout>
+
         <TextView
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="@android:color/darker_gray"/>
+
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -79,7 +81,6 @@
             android:gravity="center"
             android:padding="4dp"
             android:text="Team B"
-
             android:textColor="#000000"
             android:textSize="20dp"
             android:textStyle="bold|italic"/>
@@ -133,6 +134,7 @@
         android:padding="1dp"
         android:textStyle="bold"
         android:onClick="finish"/>
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
