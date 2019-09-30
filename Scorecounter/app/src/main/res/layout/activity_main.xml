@@ -1,145 +1,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#80FF"
-    >
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="1"
     android:orientation="vertical">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="4dp"
-        android:text="Team A"
-        android:textColor="#000000"
-        android:textSize="20dp"
-        android:textStyle="bold|italic"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="14dp"
-        android:text="0"
-        android:textStyle="bold"
-        android:id="@+id/team_a_score"/>
 
     <Button
-        android:layout_width="match_parent"
+        android:id="@+id/button_basketball"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="+3 Points"
-        android:onClick="three"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/main_margin"
+        android:text="@string/sport_one">
+
+    </Button>
 
     <Button
-        android:layout_width="match_parent"
+        android:id="@+id/Volleyball"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="+2 Points"
-        android:onClick="two"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/main_margin"
+        android:text="@string/sport_two">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="Free throw (+1)"
-        android:onClick="one"/>
-   <Button
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="UNDO !!"
-       android:textStyle="bold"
-       android:onClick="undoa"
-       android:layout_marginLeft="40dp"/>
-</LinearLayout>
-
-        <TextView
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@android:color/darker_gray"/>
-
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="4dp"
-            android:text="Team B"
-            android:textColor="#000000"
-            android:textSize="20dp"
-            android:textStyle="bold|italic"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="14dp"
-            android:text="0"
-            android:textStyle="bold"
-            android:id="@+id/team_b_score"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="+3 Points"
-            android:onClick="threeb"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="+2 Points"
-            android:onClick="twob"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="Free throw (+1)"
-            android:onClick="oneb"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="UNDO !!"
-            android:textStyle="bold"
-            android:onClick="undob"
-            android:layout_marginLeft="40dp"/>
-    </LinearLayout>
-    </LinearLayout>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_margin="5dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginStart="25dp"
-        android:gravity="center"
-        android:text="FINISH"
-        android:padding="1dp"
-        android:textStyle="bold"
-        android:onClick="finish"/>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/bkt"
-        android:background="#FFFFFF"/>
+    </Button>
 
 </LinearLayout>
 

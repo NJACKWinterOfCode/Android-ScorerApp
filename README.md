@@ -1,9 +1,29 @@
 ### Android-ScorerApp
-This app works as a real time scorer in a basketball game.Just as Basketball game can have either +3,+2 or a free throw(+1) as points this can work as a score card.
+[![forthebadge](https://forthebadge.com/images/badges/built-for-android.svg)](http://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-java.svg)](http://forthebadge.com)
+
+
+A simple app which works as a real time scorer for different games.
+Curently this app works as a real time scorer in a basketball game.Just as Basketball game can have either +3,+2 or a free throw(+1) as points this can work as a score card.
 The app is also engrossed with the features of Undo and reset.Reset sets score of both teams to 0 while individual undo buttons for both teams helps app user to correct his/her mistake in awarding points.
 
-![ScreenShot](https://github.com/chanmol1999/android-ScorerApp/blob/master/Scorecounter/121.jpeg)
+## Features
+* No need to note the details manually.
+* An app enhances the authenticity for the results.
 
-## Also a popup dialog box on finish to display the winner/tie ( in case a tie) and also to choose between another game or exit from the app
+<!---### Download the app  --->
 
-![ScreenShot](https://github.com/chanmol1999/android-ScorerApp/blob/master/Scorecounter/131.jpeg)
+<!---You can download by clicking [here](https://github.com/NJACKWinterOfCode/WhatsApp-Direct-Message/raw/master/apk/WhatsApp_Direct_Message.apk) :-) --->
+
+### Install and contribute
+
+```sh
+$ git clone https://github.com/NJACKWinterOfCode/Android-ScorerApp.git
+```
+Then open in Android Studio.
+
+### Rules
+* Claim the issue first before start working on it.
+* Work on one issue at a time.
+* Create separate pull requests for different issues.
+* Complete the work within 3 days after claiming an issue.

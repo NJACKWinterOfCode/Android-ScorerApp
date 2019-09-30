@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">CourtCounter</string>
+    <string name="sport_one">Basket Ball</string>
+    <string name="sport_two">Volley Ball</string>
+    <string name="first_team">Team A</string>
+    <string name="second_team">Team B</string>
+    <string name="plus_three">+3 Points</string>
+    <string name="plus_two">+2 Points</string>
+    <string name="plus_one">Free throw (+1)</string>
+    <string name="undo">UNDO !!</string>
+    <string name="reset">Reset</string>
+    <string name="switch_b">Switch Sides</string>
+    <string name="finish">FINISH</string>
+    <string name="Init_value">0</string>
 </resources>
