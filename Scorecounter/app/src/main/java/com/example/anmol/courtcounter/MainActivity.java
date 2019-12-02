@@ -2,24 +2,25 @@ package com.example.anmol.courtcounter;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 
 import com.example.anmol.courtcounter.Basketball.BasketballActivity;
 import com.example.anmol.courtcounter.Volleyball.VolleyballActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button basketball;
-    Button volleyball;
+    ConstraintLayout basketball;
+    ConstraintLayout volleyball;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        basketball = findViewById(R.id.button_basketball);
-        volleyball = findViewById(R.id.Volleyball);
+        basketball = findViewById(R.id.basketball);
+        volleyball = findViewById(R.id.volleyball);
 
 
         basketball.setOnClickListener(new View.OnClickListener() {
