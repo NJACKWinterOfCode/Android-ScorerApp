@@ -4,20 +4,89 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputType;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.anmol.courtcounter.R;
 
 public class BasketballActivity extends AppCompatActivity {
 
+    private ImageView editNameA;
+    private ImageView editNameB;
+    private TextView nameTeamA;
+    private TextView nameTeamB;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basketball);
         getSupportActionBar().setTitle("Basketball");
+
+        nameTeamA = findViewById(R.id.teamA_nameTextView);
+        nameTeamB = findViewById(R.id.teamB_nameTextView);
+        editNameA = findViewById(R.id.edit_teamA);
+        editNameB = findViewById(R.id.edit_teamB);
+
+        editNameA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder alertBuilder = new AlertDialog.Builder(BasketballActivity.this);
+                alertBuilder.setTitle("Edit Team Name");
+
+                final EditText input = new EditText(BasketballActivity.this);
+                input.setInputType(InputType.TYPE_CLASS_TEXT);
+                alertBuilder.setView(input);
+
+                alertBuilder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        nameTeamA.setText(input.getText());
+                    }
+                });
+
+                alertBuilder.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                });
+
+                alertBuilder.show();
+            }
+        });
+
+        editNameB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder alertBuilder = new AlertDialog.Builder(BasketballActivity.this);
+                alertBuilder.setTitle("Edit Team Name");
+
+                final EditText input = new EditText(BasketballActivity.this);
+                input.setInputType(InputType.TYPE_CLASS_TEXT);
+                alertBuilder.setView(input);
+
+                alertBuilder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        nameTeamB.setText(input.getText());
+                    }
+                });
+
+                alertBuilder.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                });
+
+                alertBuilder.show();
+            }
+        });
     }
 
     int a = 0, b = 0, i = 0, j = 0;

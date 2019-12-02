@@ -9,7 +9,11 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight">
-        <activity android:name=".Volleyball.VolleyballActivity"></activity>
+        <activity
+            android:name=".Volleyball.VolleyballActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_volleyball"
+            android:theme="@style/FullscreenTheme"></activity>
         <activity android:name=".Basketball.BasketballActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
