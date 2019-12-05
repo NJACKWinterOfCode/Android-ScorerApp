@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/basket_button_layout_margin"
                 android:onClick="one"
-                android:text="@string/sport_one" />
+                android:text="@string/plus_one" />
 
             <Button
                 android:layout_width="wrap_content"
