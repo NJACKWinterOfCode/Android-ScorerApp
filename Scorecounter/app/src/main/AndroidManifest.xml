@@ -12,8 +12,11 @@
         <activity android:name=".Football.FootballActivity"
             android:screenOrientation="portrait"></activity>
         <activity
+            android:name=".TableTennis.tableTennisAcitivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".Cricket.CricketActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Badminton.BadmintonActivity"
             android:screenOrientation="portrait" />
