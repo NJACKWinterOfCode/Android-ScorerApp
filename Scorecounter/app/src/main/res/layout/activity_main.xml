@@ -52,5 +52,13 @@
         android:layout_margin="@dimen/basket_main_margin_volleyball"
         android:text="@string/football" />
 
+    <Button
+        android:id="@+id/Kabaddi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/basket_main_margin_volleyball"
+        android:text="@string/kabaddi" />
+
 </LinearLayout>
 

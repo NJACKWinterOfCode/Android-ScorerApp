@@ -10,6 +10,7 @@ import com.example.anmol.courtcounter.Badminton.BadmintonActivity;
 import com.example.anmol.courtcounter.Basketball.BasketballActivity;
 import com.example.anmol.courtcounter.Cricket.CricketActivity;
 import com.example.anmol.courtcounter.Football.FootballActivity;
+import com.example.anmol.courtcounter.Kabaddi.KabaddiActivity;
 import com.example.anmol.courtcounter.TableTennis.tableTennisAcitivity;
 import com.example.anmol.courtcounter.Volleyball.VolleyballActivity;
 
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     Button cricket;
     Button tableTennis;
     Button football;
+    Button kabaddi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         cricket = findViewById(R.id.Cricket);
         tableTennis = findViewById(R.id.tableTennis);
         football = findViewById(R.id.Football);
+        kabaddi = findViewById(R.id.Kabaddi);
 
 
         basketball.setOnClickListener(new View.OnClickListener() {
@@ -73,6 +76,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, FootballActivity.class));
+            }
+        });
+
+        kabaddi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, KabaddiActivity.class));
             }
         });
     }

@@ -60,6 +60,7 @@
     <dimen name="text15">15sp</dimen>
     <dimen name="text72">72sp</dimen>
     <dimen name="text38">38sp</dimen>
+    <dimen name="text50">50sp</dimen>
     <dimen name="tt_mar">8dp</dimen>
     <dimen name="tt_mar_top">10dp</dimen>
 

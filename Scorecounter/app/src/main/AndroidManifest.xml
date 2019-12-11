@@ -9,8 +9,11 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight">
-        <activity android:name=".Football.FootballActivity"
+        <activity android:name=".Kabaddi.KabaddiActivity"
             android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Football.FootballActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TableTennis.tableTennisAcitivity"
             android:screenOrientation="portrait" />
