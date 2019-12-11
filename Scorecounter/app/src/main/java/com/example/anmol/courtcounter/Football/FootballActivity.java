@@ -25,7 +25,6 @@ public class FootballActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_football);
-
         scoreForTeamA = findViewById(R.id.team_a_score);
         scoreForTeamB = findViewById(R.id.team_b_score);
         finishButton = findViewById(R.id.finishButton);
@@ -37,32 +36,25 @@ public class FootballActivity extends AppCompatActivity {
                 checkGameWinner();
             }
         });
-
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 reset();
             }
         });
-
     }
-
     public void displayScore() {
         scoreForTeamA.setText(String.valueOf(scoreA));
         scoreForTeamB.setText(String.valueOf(scoreB));
     }
-
     public void teamAScore(View view) {
         scoreA += 1;
         displayScore();
     }
-
     public void teamBScore(View view) {
         scoreB += 1;
         displayScore();
     }
-
-
     public void checkGameWinner() {
         if(scoreA > scoreB){
             winner = "Team A wins!";
@@ -78,14 +70,11 @@ public class FootballActivity extends AppCompatActivity {
         }
         Alert();
     }
-
     public void reset(){
-
         scoreA = 0;
         scoreB = 0;
         displayScore();
     }
-
     public void Alert(){
         final android.app.AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage("Result: " + winner);
@@ -103,6 +92,5 @@ public class FootballActivity extends AppCompatActivity {
         });
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
-
     }
 }
