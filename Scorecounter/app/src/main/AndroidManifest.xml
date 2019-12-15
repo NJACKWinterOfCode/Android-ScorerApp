@@ -9,9 +9,9 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Cricket.SuperOver"></activity>
-        <activity android:name=".Cricket.FirstTeam" />
-        <activity android:name=".Cricket.SelectFormat" />
+        <activity android:label="Cricket" android:name=".Cricket.SuperOver"></activity>
+        <activity android:label="Cricket" android:name=".Cricket.FirstTeam" />
+        <activity android:label="Cricket" android:name=".Cricket.SelectFormat" />
         <activity
             android:name=".TableTennis.tableTennisAcitivity"
             android:label="Table Tennis"
