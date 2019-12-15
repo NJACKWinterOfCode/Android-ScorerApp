@@ -6,10 +6,13 @@
     android:layout_width="match_parent"
     android:padding="4dp"
     android:background="@drawable/cricket">
+
 <LinearLayout
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical">
+
+
 <RelativeLayout
     style="@style/mainLayout">
 
@@ -166,6 +169,31 @@
                 style="@style/smallTextWithoutBG"
                 android:textColor="@color/colorBlack"
                 android:layout_margin="4dp"
+                android:text="Extras : "/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/buttonSmall"
+                    android:text="WIDE"
+                    android:background="@drawable/rounded_button_blue"
+                    android:textColor="#000000"
+                    android:onClick="wideA"/>
+
+                <Button
+                    style="@style/buttonSmall"
+                    android:text="NO BALL"
+                    android:background="@drawable/rounded_button_blue"
+                    android:textColor="#000000"
+                    android:onClick="noBallA"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/smallTextWithoutBG"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="4dp"
                 android:text="Runs : " />
 
             <LinearLayout
@@ -198,12 +226,6 @@
 
             </LinearLayout>
 
-            <Button
-                style="@style/button"
-                android:background="@drawable/rounded_button_blue"
-                android:onClick="addRunsTeamA"
-                android:text="Add" />
-
             <TextView
                 style="@style/smallTextWithoutBG"
                 android:text="Boundary : "
@@ -234,8 +256,14 @@
                 style="@style/button"
                 android:background="@drawable/rounded_button_blue"
                 android:onClick="outTeamA"
-                android:text="Wicket!"
-                android:textColor="@android:color/white" />
+                android:text="Wicket!" />
+
+            <Button
+                style="@style/button"
+                android:background="@drawable/rounded_button_blue"
+                android:onClick="addRunsTeamA"
+                android:text="Next Ball"
+                android:textColor="@android:color/white"/>
         </LinearLayout>
 
         <LinearLayout
@@ -386,6 +414,31 @@
                 style="@style/smallTextWithoutBG"
                 android:textColor="@color/colorBlack"
                 android:layout_margin="4dp"
+                android:text="Extras : "/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/buttonSmall"
+                    android:text="WIDE"
+                    android:background="@drawable/rounded_button_red"
+                    android:textColor="#000000"
+                    android:onClick="wideB"/>
+
+                <Button
+                    style="@style/buttonSmall"
+                    android:text="NO BALL"
+                    android:background="@drawable/rounded_button_red"
+                    android:textColor="#000000"
+                    android:onClick="noBallB"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/smallTextWithoutBG"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="4dp"
                 android:text="Runs : " />
 
             <LinearLayout
@@ -395,7 +448,7 @@
                 <Button
                     style="@style/buttonSmall"
                     android:background="@drawable/rounded_button_red"
-                    android:onClick="decrementRunsTeamA"
+                    android:onClick="decrementRunsTeamB"
                     android:text="-" />
 
                 <TextView
@@ -416,11 +469,6 @@
 
             </LinearLayout>
 
-            <Button
-                style="@style/button"
-                android:background="@drawable/rounded_button_red"
-                android:onClick="addRunsTeamB"
-                android:text="Add" />
 
             <TextView
                 style="@style/smallTextWithoutBG"
@@ -452,18 +500,24 @@
                 style="@style/button"
                 android:background="@drawable/rounded_button_red"
                 android:onClick="outTeamB"
-                android:text="Wicket!"
-                android:textColor="@android:color/white" />
+                android:text="Wicket!" />
+
+            <Button
+                style="@style/button"
+                android:background="@drawable/rounded_button_red"
+                android:onClick="addRunsTeamB"
+                android:text="Next Ball"
+                android:textColor="@android:color/white"/>
 
         </LinearLayout>
 
     </LinearLayout>
 
     <Button
+        android:id="@+id/resButton"
         style="@style/button"
         android:background="@drawable/rounded_button_green"
         android:layout_below="@id/ScoreBoxCricket"
-        android:onClick="reset"
         android:text="reset" />
 
 

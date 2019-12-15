@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cricket">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/headings"
+            android:text="Select team to bat first."
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="20dp"/>
+        <Button
+            android:id="@+id/TeamAFirst"
+            style="@style/button"
+            android:text="Team A"
+            android:textSize="36sp"
+            android:background="@drawable/rounded_button_blue"
+            android:padding="8dp"
+            android:layout_margin="20dp"/>
+
+        <Button
+            android:id="@+id/TeamBFirst"
+            style="@style/button"
+            android:text="Team B"
+            android:textSize="36sp"
+            android:background="@drawable/rounded_button_red"
+            android:padding="8dp"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+
+</ScrollView>

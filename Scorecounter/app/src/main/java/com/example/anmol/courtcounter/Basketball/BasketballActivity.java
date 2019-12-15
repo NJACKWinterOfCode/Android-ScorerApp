@@ -187,9 +187,9 @@ public class BasketballActivity extends AppCompatActivity {
             w = "TEAM B";
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         if (w != "")
-            builder.setMessage("Winner is  " + w);
+            builder.setMessage("Winner is " + w);
         else
-            builder.setMessage(" Oooh  It's a TIE");
+            builder.setMessage(" Oooh! It's a TIE!");
         builder.setNegativeButton("ANOTHER GAME", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 // User clicked the "Keep editing" button, so dismiss the dialog

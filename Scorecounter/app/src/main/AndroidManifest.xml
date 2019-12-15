@@ -9,15 +9,20 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:label="Table Tennis" android:name=".TableTennis.tableTennisAcitivity"
-            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Cricket.SuperOver"></activity>
+        <activity android:name=".Cricket.FirstTeam" />
+        <activity android:name=".Cricket.SelectFormat" />
         <activity
-            android:label="Cricket"
+            android:name=".TableTennis.tableTennisAcitivity"
+            android:label="Table Tennis"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".Cricket.CricketActivity"
-            android:screenOrientation="portrait"></activity>
+            android:label="Cricket"
+            android:screenOrientation="portrait" />
         <activity
-            android:label="Badminton"
             android:name=".Badminton.BadmintonActivity"
+            android:label="Badminton"
             android:screenOrientation="portrait" />
         <activity
             android:name=".splash"
@@ -28,8 +33,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:label="Volleyball" android:name=".Volleyball.VolleyballActivity" />
-        <activity  android:label="Basketball" android:name=".Basketball.BasketballActivity" />
+        <activity
+            android:name=".Volleyball.VolleyballActivity"
+            android:label="Volleyball" />
+        <activity
+            android:name=".Basketball.BasketballActivity"
+            android:label="Basketball" />
         <activity android:name=".MainActivity" />
     </application>
 
