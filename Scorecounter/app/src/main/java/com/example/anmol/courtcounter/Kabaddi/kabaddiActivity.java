@@ -3,6 +3,7 @@ package com.example.anmol.courtcounter.Kabaddi;
 import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -35,6 +36,7 @@ public class kabaddiActivity extends AppCompatActivity {
     Button ButtonbonusB;
     Button ButtonallOutA;
     Button ButtonallOutB;
+    MediaPlayer mediaPlayer;
 
     private int multiPoints = 0;
     private TextView mTextViewCountDown;
@@ -75,6 +77,7 @@ public class kabaddiActivity extends AppCompatActivity {
         ButtonbonusB = findViewById(R.id.redCard_TeamB);
         ButtonallOutA = findViewById(R.id.yellowCard_TeamA);
         ButtonallOutB = findViewById(R.id.yellowCard_TeamB);
+        mediaPlayer = MediaPlayer.create(this,R.raw.tick);
 
         buttonDisable();
 
@@ -180,11 +183,13 @@ public class kabaddiActivity extends AppCompatActivity {
             public void onTick(long millisUntilFinished) {
                 mTimeLeftInMillis = millisUntilFinished;
                 updateCountDownText();
+                mediaPlayer.start();
             }
             @Override
             public void onFinish() {
                 mTimerRunning = false;
                 mButtonStartPause.setText("Start");
+                mediaPlayer.pause();
             }
         }.start();
 
@@ -198,7 +203,7 @@ public class kabaddiActivity extends AppCompatActivity {
         mTimerRunning = false;
         mButtonStartPause.setText("Start");
         buttonDisable();
-
+        mediaPlayer.pause();
     }
     private void updateCountDownText() {
         int minutes = (int) (mTimeLeftInMillis / 1000) / 60;
@@ -251,6 +256,7 @@ public class kabaddiActivity extends AppCompatActivity {
         mTimeLeftInMillis = START_TIME_IN_MILLIS;
         updateCountDownText();
         buttonDisable();
+        mediaPlayer.pause();
     }
     public void Alert(){
         final android.app.AlertDialog.Builder builder = new AlertDialog.Builder(this);
