@@ -8,8 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-
+import android.widget.ImageView;
+import com.bumptech.glide.Glide;
 import com.example.anmol.courtcounter.Badminton.BadmintonActivity;
 import com.example.anmol.courtcounter.Basketball.BasketballActivity;
 import com.example.anmol.courtcounter.TableTennis.tableTennisAcitivity;
@@ -18,13 +18,13 @@ import com.example.anmol.courtcounter.Volleyball.VolleyballActivity;
 
 public class MainActivity extends AppCompatActivity{
 
-    Button basketball;
-    Button volleyball;
-    Button badminton;
-    Button cricket;
-    Button tableTennis;
-    Button football;
-    Button kabaddi;
+    ImageView basketball;
+    ImageView volleyball;
+    ImageView badminton;
+    ImageView cricket;
+    ImageView tableTennis;
+    ImageView football;
+    ImageView kabaddi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,31 @@ public class MainActivity extends AppCompatActivity{
         tableTennis =findViewById(R.id.button_tableTennis);
         football = findViewById(R.id.button_football);
         kabaddi = findViewById(R.id.button_kabaddi);
+
+        Glide.with(this)
+                .load(R.drawable.basketball)
+                .into(basketball);
+        Glide.with(this)
+                .load(R.drawable.volleyball)
+                .into(volleyball);
+        Glide.with(this)
+                .load(R.drawable.badminton)
+                .into(badminton);
+        Glide.with(this)
+                .load(R.drawable.tabletennis)
+                .into(tableTennis);
+        Glide.with(this)
+                .load(R.drawable.cricket)
+                .into(cricket);
+        Glide.with(this)
+                .load(R.drawable.football)
+                .into(football);
+        Glide.with(this)
+                .load(R.drawable.kabaddi)
+                .into(kabaddi);
+        /*Glide.with(this)
+                .load(R.drawable.tenn)
+                .into(lawnTennis);*/
 
 
         basketball.setOnClickListener(new View.OnClickListener() {
@@ -100,13 +125,11 @@ public class MainActivity extends AppCompatActivity{
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        switch (id) {
-            case R.id.action_about:
-                startActivity(new Intent(MainActivity.this, AboutActivity.class));
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        if (id == R.id.action_about) {
+            startActivity(new Intent(MainActivity.this, AboutActivity.class));
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
 }

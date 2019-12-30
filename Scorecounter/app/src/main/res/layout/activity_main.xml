@@ -10,7 +10,7 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="@dimen/tenDP"
@@ -24,13 +24,11 @@
             android:orientation="vertical"
             android:layout_gravity="center">
 
-            <Button
+            <ImageView
                 android:id="@+id/button_basketball"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zeroDP"
-                android:layout_weight="4"
-                android:background="@drawable/basketball"
-                />
+                android:layout_weight="4"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zeroDP"
@@ -48,13 +46,11 @@
             android:orientation="vertical"
             android:layout_gravity="center">
 
-            <Button
+            <ImageView
                 android:id="@+id/button_volleyball"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zeroDP"
-                android:layout_weight="4"
-                android:background="@drawable/volleyball"
-               />
+                android:layout_weight="4"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zeroDP"
@@ -66,7 +62,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="@dimen/tenDP"
@@ -80,13 +76,11 @@
             android:orientation="vertical"
             android:layout_gravity="center">
 
-            <Button
+            <ImageView
                 android:id="@+id/button_badminton"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zeroDP"
-                android:layout_weight="4"
-                android:background="@drawable/badminton"
-                />
+                android:layout_weight="4" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zeroDP"
@@ -104,13 +98,11 @@
             android:orientation="vertical"
             android:layout_gravity="center">
 
-            <Button
+            <ImageView
                 android:id="@+id/button_tableTennis"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zeroDP"
-                android:layout_weight="4"
-                android:background="@drawable/tabletennis"
-                />
+                android:layout_weight="4" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zeroDP"
@@ -123,7 +115,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="@dimen/tenDP"
@@ -137,13 +129,11 @@
             android:orientation="vertical"
             android:layout_gravity="center">
 
-            <Button
+            <ImageView
                 android:id="@+id/button_cricket"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zeroDP"
-                android:layout_weight="4"
-                android:background="@drawable/cricket"/>
-
+                android:layout_weight="4"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zeroDP"
@@ -160,13 +150,11 @@
             android:orientation="vertical"
             android:layout_gravity="center">
 
-            <Button
+            <ImageView
                 android:id="@+id/button_football"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zeroDP"
-                android:layout_weight="4"
-                android:background="@drawable/football"
-               />
+                android:layout_weight="4" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zeroDP"
@@ -179,7 +167,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="@dimen/tenDP"
@@ -194,13 +182,11 @@
             android:orientation="vertical"
             android:layout_gravity="center">
 
-            <Button
+            <ImageView
                 android:id="@+id/button_kabaddi"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zeroDP"
-                android:layout_weight="4"
-                android:background="@drawable/kabaddi"
-                />
+                android:layout_weight="4" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/zeroDP"
