@@ -38,6 +38,10 @@ public class FootballActivity extends AppCompatActivity {
     Button yellowCard_teamB;
     Button ButtonscoreA;
     Button ButtonscoreB;
+    private TextView redA;
+    private TextView redB;
+    private TextView yellowA;
+    private TextView yellowB;
     int redCountA = 0;
     int redCountB = 0;
     int yellowCountA = 0;
@@ -72,6 +76,10 @@ public class FootballActivity extends AppCompatActivity {
         mediaPlayer = MediaPlayer.create( this, R.raw.tick );
         teamAHeading = findViewById(R.id.headA);
         teamBHeading = findViewById(R.id.headB);
+        redA = findViewById(R.id.redA);
+        redB = findViewById(R.id.redB);
+        yellowA = findViewById(R.id.yellowA);
+        yellowB = findViewById(R.id.yellowB);
 
         buttonDisablebeforeMatch();
 
@@ -323,7 +331,7 @@ public class FootballActivity extends AppCompatActivity {
             Toast.makeText( this, "Team A Red Card limit reached", Toast.LENGTH_SHORT ).show();
         } else {
             redCountA += 1;
-            Toast.makeText( this, "Team A Red Card : " + String.valueOf( redCountA ), Toast.LENGTH_SHORT ).show();
+            redA.setText(String.valueOf(redCountA));
         }
     }
 
@@ -333,7 +341,7 @@ public class FootballActivity extends AppCompatActivity {
             Toast.makeText( this, "Team B Red Card limit reached", Toast.LENGTH_SHORT ).show();
         } else {
             redCountB += 1;
-            Toast.makeText( this, "Team B Red Card : " + String.valueOf( redCountB ), Toast.LENGTH_SHORT ).show();
+            redB.setText(String.valueOf(redCountB));
         }
     }
 
@@ -343,7 +351,7 @@ public class FootballActivity extends AppCompatActivity {
             Toast.makeText( this, "Team A Yellow Card limit reached", Toast.LENGTH_SHORT ).show();
         } else {
             yellowCountA += 1;
-            Toast.makeText( this, "Team A Yellow Card : " + String.valueOf( yellowCountA ), Toast.LENGTH_SHORT ).show();
+            yellowA.setText(String.valueOf(yellowCountA));
         }
     }
 
@@ -352,7 +360,7 @@ public class FootballActivity extends AppCompatActivity {
             Toast.makeText( this, "Team B Yellow Card limit reached", Toast.LENGTH_SHORT ).show();
         } else {
             yellowCountB += 1;
-            Toast.makeText( this, "Team B Yellow Card : " + String.valueOf( yellowCountB ), Toast.LENGTH_SHORT ).show();
+            yellowB.setText(String.valueOf(yellowCountB));
         }
     }
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <gradient
+        android:angle="225"
+        android:startColor="@color/yellowCard"
+        android:endColor="@color/yellowCard"/>
+
+    <corners
+        android:bottomLeftRadius="@dimen/tenDP"
+        android:bottomRightRadius="@dimen/tenDP"
+        android:topLeftRadius="@dimen/tenDP"
+        android:topRightRadius="@dimen/tenDP" />
+
+</shape>

@@ -85,4 +85,7 @@
     <dimen name="fifteenSP">15sp</dimen>
     <dimen name="fifteenDP">15dp</dimen>
     <dimen name="eightyDP">80dp</dimen>
+    <dimen name="fiftyDP">50dp</dimen>
+    <dimen name="sevFiveDP">75dp</dimen>
+    <dimen name="twenFiveDP">25dp</dimen>
 </resources>

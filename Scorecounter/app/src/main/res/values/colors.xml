@@ -11,7 +11,8 @@
     <color name="colorBlue">#1976D2</color>
     <color name="colorRed">#D32F2F</color>
     <color name="colorBlack">#000000</color>
-
+    <color name="redCard">#FF0000</color>
+    <color name="yellowCard">#FFC107</color>
     <color name="headingBlue">#0d47a1</color>
     <color name="scoreBlue">#0d47a1</color>
 
