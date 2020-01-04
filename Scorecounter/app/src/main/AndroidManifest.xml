@@ -12,9 +12,11 @@
         <activity android:name=".SaveResults.ResultActivity"></activity>
         <activity
             android:name=".LawnTennis.LawnTennisActivity"
+            android:label="Lawn Tennis"
             android:screenOrientation="portrait" />
         <activity
             android:name=".AboutActivity"
+            android:label="About"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Cricket.SelectFormat"

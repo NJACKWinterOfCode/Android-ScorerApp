@@ -1,104 +1,74 @@
 package com.example.anmol.courtcounter;
-
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
+import android.widget.AdapterView;
+import android.widget.ListView;
 
+import com.example.anmol.courtcounter.Badminton.BadmintonActivity;
 import com.example.anmol.courtcounter.Basketball.BasketballActivity;
-
+import com.example.anmol.courtcounter.Cricket.SelectFormat;
 import com.example.anmol.courtcounter.LawnTennis.LawnTennisActivity;
 import com.example.anmol.courtcounter.SaveResults.ResultActivity;
 import com.example.anmol.courtcounter.TableTennis.TableTennisAcitivity;
 
 import com.example.anmol.courtcounter.Football.FootballActivity;
 import com.example.anmol.courtcounter.Kabaddi.KabaddiActivity;
+import com.example.anmol.courtcounter.Volleyball.VolleyballActivity;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
-    Button basketball;
-    Button volleyball;
-    Button badminton;
-    Button cricket;
-    Button tableTennis;
-    Button football;
-    Button kabaddi;
-    Button lawnTennis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        basketball = findViewById(R.id.button_basketball);
-        volleyball = findViewById(R.id.button_volleyball);
-        badminton =  findViewById(R.id.button_badminton);
-        cricket = findViewById(R.id.button_cricket);
-        tableTennis =findViewById(R.id.button_tableTennis);
-        football = findViewById(R.id.button_football);
-        kabaddi = findViewById(R.id.button_kabaddi);
-        lawnTennis = findViewById(R.id.button_lawnTennis);
 
+        final ArrayList<menuItem> items = new ArrayList<menuItem>();
+        items.add(new menuItem(R.drawable.basketball, R.string.basketball));
+        items.add(new menuItem(R.drawable.volleyball, R.string.volleyball));
+        items.add(new menuItem(R.drawable.badminton, R.string.badminton));
+        items.add(new menuItem(R.drawable.tabletennis, R.string.tableTennis));
+        items.add(new menuItem(R.drawable.cricket, R.string.cricket));
+        items.add(new menuItem(R.drawable.football, R.string.football));
+        items.add(new menuItem(R.drawable.kabaddi, R.string.kabaddi));
+        items.add(new menuItem(R.drawable.tenn, R.string.tennis));
 
-        basketball.setOnClickListener(new View.OnClickListener() {
+        menuAdapter adapter = new menuAdapter(this, items);
+        ListView listView = (ListView) findViewById(R.id.list);
+        listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
 
             @Override
-            public void onClick(View v) {
-                startActivity( new Intent( MainActivity.this, BasketballActivity.class ) );
-            }
-        } );
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                menuItem item = items.get(position);
 
-        volleyball.setOnClickListener( new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity( new Intent( MainActivity.this, com.example.anmol.courtcounter.Volleyball.VolleyballActivity.class ) );
-            }
-        } );
+                if(item.getTitle()==R.string.basketball)
+                    startActivity(new Intent(MainActivity.this, BasketballActivity.class));
+                if(item.getTitle()==R.string.volleyball)
+                    startActivity(new Intent(MainActivity.this, VolleyballActivity.class));
+                if(item.getTitle()==R.string.badminton)
+                    startActivity(new Intent(MainActivity.this, BadmintonActivity.class));
+                if(item.getTitle()==R.string.tableTennis)
+                    startActivity(new Intent(MainActivity.this, TableTennisAcitivity.class));
+                if(item.getTitle()==R.string.cricket)
+                    startActivity(new Intent(MainActivity.this, SelectFormat.class));
+                if(item.getTitle()==R.string.football)
+                    startActivity(new Intent(MainActivity.this, FootballActivity.class));
+                if(item.getTitle()==R.string.kabaddi)
+                    startActivity(new Intent(MainActivity.this, KabaddiActivity.class));
+                if(item.getTitle()==R.string.tennis)
+                    startActivity(new Intent(MainActivity.this, LawnTennisActivity.class));
 
-        badminton.setOnClickListener( new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity( new Intent( MainActivity.this, com.example.anmol.courtcounter.Badminton.BadmintonActivity.class ) );
-            }
-        } );
 
-        cricket.setOnClickListener( new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity( new Intent( MainActivity.this, com.example.anmol.courtcounter.Cricket.SelectFormat.class ) );
-            }
-        } );
-
-        tableTennis.setOnClickListener( new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity( new Intent( MainActivity.this, TableTennisAcitivity.class ) );
-            }
-        } );
-
-        football.setOnClickListener( new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity( new Intent( MainActivity.this, FootballActivity.class ) );
-            }
-        } );
-
-        kabaddi.setOnClickListener( new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity( new Intent( MainActivity.this, KabaddiActivity.class ) );
             }
         });
-
-        lawnTennis.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, LawnTennisActivity.class));
-            }
-        }); 
     }
 
     @Override
