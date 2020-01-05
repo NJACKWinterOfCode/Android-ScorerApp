@@ -19,34 +19,34 @@
         <activity
             android:name=".Cricket.SelectFormat"
             android:label="Cricket"
-            android:screenOrientation="sensor" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Cricket.FirstTeam"
             android:label="Cricket"
-            android:screenOrientation="sensor" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Kabaddi.KabaddiActivity"
             android:label="Kabaddi"
-            android:screenOrientation="sensor" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Football.FootballActivity"
             android:label="Football"
-            android:screenOrientation="sensor" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TableTennis.TableTennisAcitivity"
             android:label="Table Tennis"
-            android:screenOrientation="sensor" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Cricket.CricketActivity"
             android:label="Cricket"
-            android:screenOrientation="sensor" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Badminton.BadmintonActivity"
             android:label="Badminton"
-            android:screenOrientation="sensor" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Splash"
-            android:screenOrientation="sensor"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -57,14 +57,14 @@
         <activity
             android:name=".Volleyball.VolleyballActivity"
             android:label="Volleyball"
-            android:screenOrientation="sensor" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Basketball.BasketballActivity"
             android:label="Basketball"
-            android:screenOrientation="sensor" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="sensor" />
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
