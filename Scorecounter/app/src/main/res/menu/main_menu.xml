@@ -7,11 +7,12 @@
         android:icon="@drawable/ic_info_outline_24dp"
         android:title="@string/menu_about"
         app:showAsAction="never" />
-    <item
-        android:id="@+id/action_settings"
-        android:title="@string/menu_setting"
-        app:showAsAction="never" />
+
     <item android:id="@+id/action_savedResults"
         android:title="@string/savedResults"
         app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_share"
+        android:title="@string/share"
+        app:showAsAction="never" />
 </menu>

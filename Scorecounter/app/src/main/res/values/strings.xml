@@ -65,5 +65,6 @@
     <string name="savedResults">Saved Results</string>
     <string name="model">[Team A] : 0-0 : [Team B]</string>
     <string name="modelResult">Result : Team A wins!</string>
+    <string name="share">Share App</string>
 </resources>
 
