@@ -74,17 +74,6 @@
                         android:onClick="teamAScore"
                         android:text="@string/add_one_point" />
 
-                    <Button
-                        android:id="@+id/redCard_TeamA"
-                        style="@style/button"
-                        android:background="@drawable/rounded_button_red"
-                        android:text="@string/redCard" />
-
-                    <Button
-                        android:id="@+id/yellowCard_TeamA"
-                        style="@style/button"
-                        android:background="@drawable/rounded_button_yellow"
-                        android:text="@string/yellowCard" />
 
 
                 </LinearLayout>
@@ -140,17 +129,6 @@
                         android:onClick="teamBScore"
                         android:text="@string/add_one_point" />
 
-                    <Button
-                        android:id="@+id/redCard_TeamB"
-                        style="@style/button"
-                        android:background="@drawable/rounded_button_red"
-                        android:text="@string/redCard" />
-
-                    <Button
-                        android:id="@+id/yellowCard_TeamB"
-                        style="@style/button"
-                        android:background="@drawable/rounded_button_yellow"
-                        android:text="@string/yellowCard" />
                 </LinearLayout>
             </LinearLayout>
 
