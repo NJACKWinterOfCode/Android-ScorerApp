@@ -35,7 +35,37 @@
                         style="@style/mainScore"
                         android:background="@drawable/border"
                         android:text="@string/original_score"
-                        android:textColor="@color/scoreBlue" />
+                        android:textColor="@color/scoreBlue"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/twenFiveDP"
+                        android:layout_marginBottom="@dimen/tenDP">
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/fifteenDP"
+                            android:id="@+id/redA"
+                            android:textSize="@dimen/logo_text"
+                            android:textColor="@android:color/white"
+                            android:layout_width="@dimen/fiftyDP"
+                            android:layout_height="@dimen/sevFiveDP"
+                            android:background="@drawable/red_card"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/basket_finish_b_margin_S"
+                            android:id="@+id/yellowA"
+                            android:textSize="@dimen/logo_text"
+                            android:textColor="@android:color/white"
+                            android:layout_width="@dimen/fiftyDP"
+                            android:layout_height="@dimen/sevFiveDP"
+                            android:background="@drawable/yellow_card"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
 
                     <Button
                         android:id="@+id/scoreA"
@@ -73,6 +103,35 @@
                         android:background="@drawable/border"
                         android:text="@string/original_score"
                         android:textColor="@android:color/holo_green_dark" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/twenFiveDP"
+                        android:layout_marginBottom="@dimen/tenDP">
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/fifteenDP"
+                            android:id="@+id/redB"
+                            android:textSize="@dimen/logo_text"
+                            android:textColor="@android:color/white"
+                            android:layout_width="@dimen/fiftyDP"
+                            android:layout_height="@dimen/sevFiveDP"
+                            android:background="@drawable/red_card"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/basket_finish_b_margin_S"
+                            android:id="@+id/yellowB"
+                            android:textSize="@dimen/logo_text"
+                            android:textColor="@android:color/white"
+                            android:layout_width="@dimen/fiftyDP"
+                            android:layout_height="@dimen/sevFiveDP"
+                            android:background="@drawable/yellow_card"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
 
                     <Button
                         android:id="@+id/scoreB"
