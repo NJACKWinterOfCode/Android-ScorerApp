@@ -118,11 +118,24 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_savedResults:
                 startActivity(new Intent(MainActivity.this, ResultActivity.class));
                 return true;
-
+            case R.id.action_share:
+                shareApp();
+                return true;
             default:
                 return super.onOptionsItemSelected( item );
         }
 
+    }
+
+    public void shareApp(){
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        String shareBody = "Hey! I found a really cool Sports Scoring App. Have a look https://github.com/NJACKWinterOfCode/Android-ScorerApp ";
+        String shareTitle = "Real Time Scorer";
+        intent.putExtra(Intent.EXTRA_SUBJECT,shareTitle);
+        intent.putExtra(Intent.EXTRA_TEXT,shareBody);
+
+        startActivity(intent.createChooser(intent,"Share Using.."));
     }
 
 }
