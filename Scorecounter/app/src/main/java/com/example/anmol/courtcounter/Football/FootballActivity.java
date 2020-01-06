@@ -32,10 +32,6 @@ public class FootballActivity extends AppCompatActivity {
     TextView scoreForTeamB;
     Button finishButton;
     Button reset;
-    Button redCard_teamA;
-    Button redCard_teamB;
-    Button yellowCard_teamA;
-    Button yellowCard_teamB;
     Button ButtonscoreA;
     Button ButtonscoreB;
     private TextView redA;
@@ -65,10 +61,7 @@ public class FootballActivity extends AppCompatActivity {
         scoreForTeamB = findViewById( R.id.team_b_score );
         finishButton = findViewById( R.id.finish );
         reset = findViewById( R.id.reset );
-        redCard_teamA = findViewById( R.id.redCard_TeamA );
-        redCard_teamB = findViewById( R.id.redCard_TeamB );
-        yellowCard_teamA = findViewById( R.id.yellowCard_TeamA );
-        yellowCard_teamB = findViewById( R.id.yellowCard_TeamB );
+
         mTextViewCountDown = findViewById( R.id.text_view_countdown );
         mButtonStartPause = findViewById( R.id.button_start_pause );
         ButtonscoreA = findViewById( R.id.scoreA );
@@ -83,28 +76,28 @@ public class FootballActivity extends AppCompatActivity {
 
         buttonDisablebeforeMatch();
 
-        redCard_teamA.setOnClickListener( new View.OnClickListener() {
+        redA.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 redCardA();
             }
         } );
 
-        redCard_teamB.setOnClickListener( new View.OnClickListener() {
+        redB.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 redCardB();
             }
         } );
 
-        yellowCard_teamA.setOnClickListener( new View.OnClickListener() {
+        yellowA.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 yellowCardA();
             }
         } );
 
-        yellowCard_teamB.setOnClickListener( new View.OnClickListener() {
+        yellowB.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 yellowCardB();
@@ -296,6 +289,10 @@ public class FootballActivity extends AppCompatActivity {
         mTimeLeftInMillis = START_TIME_IN_MILLIS;
         updateCountDownText();
         buttonDisablebeforeMatch();
+        redA.setText("");
+        redB.setText("");
+        yellowA.setText("");
+        yellowB.setText("");
     }
 
     public void Alert() {
@@ -373,23 +370,22 @@ public class FootballActivity extends AppCompatActivity {
 
     public void buttonDisablebeforeMatch() {
 
-        redCard_teamA.setEnabled( false );
-        redCard_teamB.setEnabled( false );
-        yellowCard_teamA.setEnabled( false );
-        yellowCard_teamB.setEnabled( false );
         ButtonscoreA.setEnabled( false );
         ButtonscoreB.setEnabled( false );
-
+        redA.setEnabled(false);
+        redB.setEnabled(false);
+        yellowA.setEnabled(false);
+        yellowB.setEnabled(false);
     }
 
     public void buttonEnable() {
 
-        redCard_teamA.setEnabled( true );
-        redCard_teamB.setEnabled( true );
-        yellowCard_teamA.setEnabled( true );
-        yellowCard_teamB.setEnabled( true );
         ButtonscoreA.setEnabled( true );
         ButtonscoreB.setEnabled( true );
+        redA.setEnabled(true);
+        redB.setEnabled(true);
+        yellowA.setEnabled(true);
+        yellowB.setEnabled(true);
 
     }
 
